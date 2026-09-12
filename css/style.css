@@ -112,14 +112,12 @@ main,
 
 .hero-title {
   margin-top: 14px;
-  font-size: clamp(3rem, 12vw, 6.5rem);
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  background: linear-gradient(120deg, var(--accent-2), var(--accent));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+}
+
+.hero-title img {
+  width: clamp(260px, 42vw, 560px);
+  height: auto;
+  filter: drop-shadow(0 0 28px rgba(255, 90, 30, 0.45));
 }
 
 .hero-dialogue {
