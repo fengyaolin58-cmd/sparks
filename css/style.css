@@ -188,11 +188,33 @@ main,
   color: var(--text);
 }
 
+.discord-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #5865f2;
+  color: #fff;
+}
+
+.discord-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 /* --- Sections --- */
 .section {
   max-width: 900px;
   margin: 0 auto;
   padding: 90px 24px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact .placeholder-text {
+  margin: 0 auto 26px;
 }
 
 /* Pull Concept Art up closer to About — the two read as one flow,
