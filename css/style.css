@@ -233,25 +233,21 @@ main,
 /* --- About --- */
 /* --- Journey banner --- */
 .journey-banner {
-  position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 24px;
+  padding-bottom: 56px;
   text-align: center;
-  background:
-    linear-gradient(
-      rgba(5, 3, 4, 0) 0%,
-      rgba(5, 3, 4, 0.6) 38%,
-      rgba(5, 3, 4, 0.6) 62%,
-      rgba(5, 3, 4, 0) 100%
-    ),
-    url("../assets/journey-banner.png") center / cover no-repeat;
+  background: #050304;
+}
+
+.journey-art {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .journey-caption {
   max-width: 60ch;
+  margin: 32px auto 0;
+  padding: 0 24px;
 }
 
 .journey-quote {
@@ -259,8 +255,7 @@ main,
   font-weight: 600;
   font-size: clamp(1.1rem, 2.6vw, 1.6rem);
   line-height: 1.6;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.85), 0 0 40px rgba(255, 90, 30, 0.25);
+  color: var(--text);
 }
 
 .journey-credit {
@@ -268,8 +263,7 @@ main,
   font-size: 0.78rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  color: var(--text-dim);
 }
 
 .about-grid {
