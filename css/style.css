@@ -231,16 +231,45 @@ main,
 }
 
 /* --- About --- */
-.story-quote {
-  margin: 24px 0;
-  padding: 20px 24px;
-  border-left: 3px solid var(--accent);
-  background: var(--bg-elevated);
-  border-radius: var(--radius);
+/* --- Journey banner --- */
+.journey-banner {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  text-align: center;
+  background:
+    linear-gradient(
+      rgba(5, 3, 4, 0) 0%,
+      rgba(5, 3, 4, 0.6) 38%,
+      rgba(5, 3, 4, 0.6) 62%,
+      rgba(5, 3, 4, 0) 100%
+    ),
+    url("../assets/journey-banner.png") center / cover no-repeat;
+}
+
+.journey-caption {
+  max-width: 60ch;
+}
+
+.journey-quote {
   font-style: italic;
-  color: var(--text);
-  font-size: 1.05rem;
+  font-weight: 600;
+  font-size: clamp(1.1rem, 2.6vw, 1.6rem);
   line-height: 1.6;
+  color: #fff;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.85), 0 0 40px rgba(255, 90, 30, 0.25);
+}
+
+.journey-credit {
+  margin-top: 18px;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 .about-grid {
